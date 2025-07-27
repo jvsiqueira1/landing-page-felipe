@@ -5,6 +5,7 @@ import { Testimonials } from "./_components/testimonials";
 import { Results } from "./_components/results";
 import { About } from "./_components/about";
 import { Footer } from "./_components/footer";
+import { Map } from "./_components/map";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Results />
       <Testimonials />
       <About />
+      <Map />
       <Footer />
     </main>
   );

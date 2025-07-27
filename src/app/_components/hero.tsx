@@ -4,54 +4,86 @@ import Image from "next/image";
 
 export function Hero() {
   return (
-    <section className="bg-[#ed8e53] text-white relative overflow-hidden">
-      <div>
+    <section className="section-dark relative overflow-hidden min-h-[80vh] flex items-center">
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
         <Image
           src={felipeImg}
-          alt="Foto do felipe"
+          alt="Felipe Lozich - Assessor de Investimentos"
           fill
           sizes="100vw"
           priority
-          className="object-cover opacity-60 lg:hidden"
+          className="object-cover opacity-20"
         />
-        <div className="absolut inset-0 bg-black opacity-40 md:hidden"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-background-dark/90 to-background-dark/70"></div>
       </div>
-      <div className="container mx-auto pt-16 pb-16 md:pb-0 px-4 relative">
-        <article className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          <div className="space-y-6 mt-4">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold leading-10">
-              Está precisando de um assessor de investimentos?
-            </h1>
-            <p className="text-sm lg:text-lg mb-4">
-              Posso te ajudar, receba uma orientação imediata com apenas 1
-              clique e tire todas as suas dúvidas.
-            </p>
 
-            <div className="mt-8 py-2">
+      {/* Content */}
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="space-y-8">
+            <div className="space-y-6">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-black leading-tight text-white">
+                Está precisando de um{" "}
+                <span className="text-accent-primary">
+                  assessor de investimentos
+                </span>
+                ?
+              </h1>
+              <p className="text-lg md:text-xl text-white/90 leading-relaxed max-w-2xl">
+                Assessor com mais de 5 anos de experiência no mercado
+                financeiro. Posso te ajudar a alcançar seus objetivos
+                financeiros com estratégias personalizadas.
+              </p>
+            </div>
+
+            <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="https://api.whatsapp.com/send?phone=5566999985145&text=Ol%C3%A1%2C%20Felipe!%20Gostaria%20de%20receber%20orienta%C3%A7%C3%B5es%20sobre%20investimentos."
+                href="https://api.whatsapp.com/send?phone=5566999985145&text=Olá! Felipe! Gostaria de receber orientações sobre investimentos."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-white text-[#ed8e53] px-4 py-2 rounded-md hover:bg-gray-200 transition-colors flex items-center justify-center w-fit gap-2"
+                className="btn-primary text-lg px-8 py-4 flex items-center justify-center gap-3"
               >
-                <WhatsappLogoIcon className="w-5 h-5" />
-                Fale comigo
+                <WhatsappLogoIcon className="w-6 h-6" />
+                Fale comigo agora
               </a>
+              <a
+                href="#services"
+                className="btn-outline text-lg px-8 py-4 text-white border-white hover:bg-white hover:text-background-dark"
+              >
+                Saiba mais
+              </a>
+            </div>
+
+            <div className="flex items-center space-x-8 pt-4">
+              <div className="flex items-center space-x-2 text-white/80">
+                <div className="w-2 h-2 bg-accent-primary rounded-full"></div>
+                <span className="text-sm font-medium">
+                  Atendimento personalizado
+                </span>
+              </div>
+              <div className="flex items-center space-x-2 text-white/80">
+                <div className="w-2 h-2 bg-accent-secondary rounded-full"></div>
+                <span className="text-sm font-medium">
+                  Estratégias sob medida
+                </span>
+              </div>
             </div>
           </div>
 
-          <div className="hidden md:block h-full relative">
-            <Image
-              src={felipeImg}
-              alt="Foto do Felipe"
-              className="object-contain"
-              fill
-              sizes="(max-width: 768px) 0vw, 50vw"
-              quality={100}
-              priority
-            />
+          <div className="hidden lg:block relative">
+            <div className="relative w-full h-[600px]">
+              <Image
+                src={felipeImg}
+                alt="Felipe Lozich - Assessor de Investimentos"
+                fill
+                sizes="(max-width: 1024px) 0vw, 50vw"
+                className="object-contain"
+                priority
+              />
+            </div>
           </div>
-        </article>
+        </div>
       </div>
     </section>
   );

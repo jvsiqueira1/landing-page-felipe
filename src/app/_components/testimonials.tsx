@@ -3,7 +3,7 @@ import useEmblaCarousel from "embla-carousel-react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import usuario from "../../../public/usuario.png";
 import Image from "next/image";
-import StarRating from "../../components/StarRating";
+import StarRating from "@/components/StarRating";
 
 const testimonials = [
   {

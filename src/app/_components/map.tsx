@@ -1,4 +1,4 @@
-import MapComponent from "../../components/MapComponent";
+import MapComponent from "../components/MapComponent";
 
 export function Map() {
   return (

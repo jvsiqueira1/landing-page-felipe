@@ -50,7 +50,7 @@ export function Map() {
                   <p className="text-muted-foreground">
                     Av. das Flores, 945 - Jardim Cuiabá
                     <br />
-                    Cuiabá - MT, 78043-000
+                    Cuiabá - MT, CEP 78.043-172
                   </p>
                 </div>
               </div>

@@ -9,10 +9,10 @@ const containerStyle = {
   height: "100%",
 };
 
-// Coordenadas para Cuiabá, MT
+// Coordenadas para EQI Investimentos - Cuiabá, MT
 const establishmentLocation = {
-  lat: -15.5898033, // Latitude para Av. das Flores, 945 - Jardim Cuiabá
-  lng: -56.1018593, // Longitude para Av. das Flores, 945 - Jardim Cuiabá
+  lat: -15.594761057234825, // Latitude para Av. das Flores, 945 - Jardim Cuiabá
+  lng: -56.119856913491454, // Longitude para Av. das Flores, 945 - Jardim Cuiabá
 };
 
 function MapComponent() {
@@ -96,7 +96,7 @@ function MapComponent() {
     >
       <Marker
         position={establishmentLocation}
-        title="Escritório Felipe Lozich - Av. das Flores, 945"
+        title="EQI Investimentos - Av. das Flores, 945, Jardim Cuiabá, CEP 78.043-172"
         icon={{
           url:
             "data:image/svg+xml;charset=UTF-8," +
